@@ -1,0 +1,8 @@
+[10-May-2020 16:08:40 UTC] PHP Fatal error:  Class 'App\Mail\Controller' not found in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 10
+[10-May-2020 20:46:13 UTC] PHP Fatal error:  Cannot use Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 9
+[10-May-2020 20:46:25 UTC] PHP Fatal error:  Cannot use App\Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 9
+[10-May-2020 20:46:26 UTC] PHP Fatal error:  Cannot use App\Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 9
+[10-May-2020 20:50:11 UTC] PHP Fatal error:  Cannot use App\Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 8
+[10-May-2020 20:51:02 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 7
+[10-May-2020 20:51:04 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 7
+[10-May-2020 20:51:05 UTC] PHP Fatal error:  Cannot use Illuminate\Support\Facades\Mail as Mail because the name is already in use in /home/humancap/public_html/app/Http/Controllers/ContactController.php on line 7
