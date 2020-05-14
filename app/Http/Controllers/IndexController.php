@@ -20,6 +20,11 @@ class IndexController extends Controller
         $jobs =  jobs::orderBy('created_at', 'desc')->paginate(5);
         return view('homepage',compact('jobs'));
     }
+    public function homepageen(){
+        $jobs =  jobs::where('language','english')->orderBy('created_at', 'desc')->paginate(5);
+        return view('eng.homepage',compact('jobs'));
+    }
+
     public function AdminCandidate(){ 
         $trainings = DB::table('trainingbooks')->paginate(15);
         $sendcvs = DB::table('sendcvs')->paginate(15);

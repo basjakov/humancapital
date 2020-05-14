@@ -17,6 +17,7 @@ class CreateTrainingsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('image');
+            $table->string('language');
             $table->string('description');
             $table->date('starting');
             $table->date('end');

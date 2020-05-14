@@ -3,12 +3,16 @@
 <meta name="author" content="humancapital">
 <meta name="description" content="պրոֆեսիոնալ HR ծառայություններ աշխատանք ձեր համար
 ">
-<meta name="keywords" content="Humancapital |մեր մասին">
+<meta name="keywords" content="Humancapital ,աշխատանք հայաստանում,պրոֆեսիոնալ մռ ծառայություններ,hr">
 
 
 <title>
     Humancapital |Աշխատանք և պրոֆեսիոնալ HR ծառայություններ
 </title>
+@endsection
+@section('switcher_eng')
+    <a href="{{route('homeen')}}" style="color: #fff;font-size:23px;">Eng</a>
+@endsection
 @section('content')
 
 <section id="intro">
@@ -16,8 +20,9 @@
 <div class="carousel-background"><img src="imags/slider/slider1.jpg" alt=""></div>
 <div class="carousel-container">
 <div class="carousel-content">
- <h2 class="font-color-white">Գտիր քո երազանքի աշխատանքը</h2>
-<p class="font-color-white"> Humancapital-ի հետ դուք կարող եք գտնել ձեզ և ձեր պրոֆիլին համապատասխան աշխատանք:Մեր պրոֆեսիոնալ HR թիմը կանի ամեն ինչ ձեր զբաղվածությունը հավուր պատշաճով ապահովելու համար:</p>
+ <h2 class="font-color-white">ՀՅՈՒՄՆ ՔՅԱՓԻԹԱԼ` ՄԵԿ ԹԻՄՙՙ, ՄԵԿԸՆՏԱՆԻՔ</հ2>
+<p class="font-color-white"> Մենք առաջարկում ենք ՄՌ ծառայությունների լայն ընտրանի: Մեզ հետ դուք կգտնեք Ձեր երազանքի
+աշխատանքը:</p>
 <a href="#" data-toggle="modal" data-target="#myModal"><i class=" material-icons play">play_arrow</i></a>
 </div>
 </div>
@@ -59,7 +64,8 @@
 <div class="container">
 <h3 class="text-center">Գտիր քո երազանքի աշխատանքը "Հյումն Քյափիթալ-ում"</h3>
 <div class="vertical-space-30"></div>
-<p class="max-width">Գտիր երազանքի աշխատանքը կամ վերապատրաստվիր մեր կողմից առաջարկվող ամենաորակյալ դասընթացներով ստեղծիր քո կարիերան մեր օգնությամբ
+<p class="max-width">Գտիր քո երազանքի աշխատանքը կամ վերապատրաստվիր մեր կողմից առաջարկվող ամենաորակյալ
+դասընթացներով՝կերտելով քո կարիերան մեր օգնությամբ:
 </p>
 <div class="vertical-space-60"> </div>
 <div class="row">
@@ -80,7 +86,7 @@
 <img src="imags/icone/service-icone-1.png" alt="">
 </div>
 <h6>Դասընթացներ</h6>
-<a href="{{route('trainings')}}" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>Դիտել</span></a>
+<a href="{{route('trainings')}}" class="button job_post" style="padding:12px 35px;" data-hover="View Trainings" data-active="I'M ACTIVE"><span>Դիտել</span></a>
 </div>
 </div>
 <div class="col-lg-4 col-md-6 max-width-50">
@@ -88,26 +94,20 @@
 <div class="circle">
 <img src="imags/icone/service-icone-4.png" alt="">
 </div>
-<h6>Blog</h6>
-<a href="{{Route('hcblog')}}" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>Ընթերցել</span></a>
+<h6>Հոդվածներ</h6>
+<a href="{{Route('hcblog')}}" class="button job_post" data-hover="Go to  blog" data-active="I'M ACTIVE"><span>Ընթերցել</span></a>
 </div>
 </div>
 
 
 
-
-
-
-
-<section id="resent-job-post" class="background-color-white" style="margin-left: 15%;">
+<section id="resent-job-post" class="background-color-white">
 <div class="vertical-space-85"></div>
 <div class="container text-center">
 <h3 class="text-center">Ամենաթարմ աշխատանքները</h3>
-<div class="vertical-space-30">Ամենաթարմ աշխատանքները՝դիմեք և մենք կկապվենք ձեզ հետ հնարավորինս արագ</div>
-<p class="max-width">
+<div class="vertical-space-30"></div>
+<p class="max-width">Դիմեք և մենք հնարավորինս արագ կապ կհաստատենք Ձեզ հետ:
 </p>
-</div>
-
 @foreach($jobs as $job):
 <div class="vertical-space-60"></div>
 <div class="detail">
@@ -117,19 +117,19 @@
 <h6>{{$job->title}}</h6>
 <i class="large material-icons">account_balance</i>
 <span class="text">{{$job->company}}</span>
-<br />
+<br>
 <i class="large material-icons">place</i>
 <span class="text font-size">{{$job->location}}</span>
 <div class="float-right margin-top text-align-center">
-<a href="{{route('jobs.show',$job->id)}}" class="part-full-time">{{$job->job_type}}</a>
-<p class="date-time">Deadline: {{$job->deadline}}</p>
+<a href="{{route('jobs.show',$job->id)}}" class="part-full-time">{{$job->job_type}}</a></br>
+<a href="{{route('jobs.show',$job->id)}}" class="part-full-time">Մանրամասն</a>
+<p class="date-time">Վերջնաժամկետ: {{$job->deadline}}</p>
 </div>
 </div>
 </div>
 </div>
 
 @endforeach
-
 
 <div class="vertical-space-20"></div>
    <div class="job-list">
@@ -139,8 +139,12 @@
       </ul>
     </div>
 </div>
-<div class="vertical-space-60"></div>
-</section>
+
+
+
+
+
+
 
 
 
@@ -179,13 +183,15 @@
 դեպքում</li>
 
 </ul>
-<div class="vertical-space-30">
+
+<div class="vertical-space-30"></div>
 <a href="{{route('vacancies')}}" class="Explore-Employee">Աշխատանքներ</a>
 <a href="{{route('trainings')}}" class="Explore-New-Jobs">Դասընթացներ</a>
 </div>
-</div>
+
 <div class="col-lg-3 col-md-6">
 <img src="imags/man.png" alt="" class="man-img">
+</div>
 </div>
 <div class="vertical-space-60"></div>
 </div>

@@ -8,6 +8,7 @@
                       <tr>
                         <td>Training</td> 
                         <th>Title</th>
+                        <th>Language</th>
                         <th>Starting</th>
                         <th>End</th>
                         <th>Location</th>
@@ -20,6 +21,7 @@
                       <tr>
                         <td><a href="{{route('training.show',$training->id)}}"  style="font-size:20px;">Show {{$training->id}}</a></td>
                         <td>{{$training->title}}</td>
+                        <td>{{$training->language}}</td>
                         <td>{{$training->starting}}</td>
                         <td>{{$training->end}}</td>
                         <td>{{$training->location}}</td>

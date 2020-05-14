@@ -6,7 +6,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+.homeen{color: #fff;font-size:23px;}
 :root {
   --blue: #3490dc;
   --indigo: #6574cd;
@@ -50,6 +50,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 article,
 aside,

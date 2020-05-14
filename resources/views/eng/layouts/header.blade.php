@@ -19,7 +19,7 @@ info@humancapital.am
 
 </ul>
 <div class=" ml-auto ">
-    @yield('switcher_eng')
+    @yield('switcher_hay')
 <div class="hamburger menu_mm  search_button transparent search display"><i class="large material-icons font-color-white  search-icone  menu_mm ">menu</i></div>
 </div>
 
@@ -42,12 +42,12 @@ info@humancapital.am
 </div>
 <nav class="main_nav_contaner ml-auto">
 <ul class="main_nav">
-<li><a href="{{Route('home')}}">Գլխավոր</a></li>
-<li><a href="{{Route('vacancies')}}">Աշխատանքներ</a></li>
-<li><a href="{{Route('trainings')}}">Դասընթացներ</a></li>
-<li><a href="{{Route('hcblog')}}">Հոդվածներ</a></li>
-<li><a href="/about">Մեր մասին</a></li>
-<li><a href="{{Route('contact')}}">Հետադարձ կապ</a></li>
+<li><a href="{{Route('homeen')}}">Home</a></li>
+<li><a href="{{Route('vacancies_en')}}">vacancies</a></li>
+<li><a href="{{Route('trainingsen')}}">trainings</a></li>
+<li><a href="{{Route('hcblogen')}}">Blog</a></li>
+<li><a href="/en/about">About us</a></li>
+<li><a href="{{Route('contacten')}}">Contact us</a></li>
 </ul>
 
 <div class="hamburger menu_mm menu-vertical">
@@ -70,12 +70,12 @@ info@humancapital.am
 
 <nav class="menu_nav">
 <ul class="menu_mm">
-<li><a href="{{Route('home')}}">Գլխավոր</a></li>
-<li><a href="{{Route('vacancies')}}">Աշխատանքներ</a></li>
-<li><a href="{{Route('trainings')}}">Դասընթացներ</a></li>
-<li><a href="{{Route('hcblog')}}">Հոդվածներ</a></li>
-<li><a href="/about">Մեր մասին</a></li>
-<li><a href="{{route('contact')}}">Հետադարձ կապ</a></li>
+<li><a href="{{Route('homeen')}}">Home</a></li>
+<li><a href="{{Route('vacancies_en')}}">Vacancies</a></li>
+<li><a href="{{Route('trainingsen')}}">Trainings</a></li>
+<li><a href="{{Route('hcblogen')}}">Blog</a></li>
+<li><a href="/abouten">About us</a></li>
+<li><a href="{{Route('contacten')}}">Contact us</a></li>
 </nav>
 </div>
 </header>

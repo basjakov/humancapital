@@ -24,8 +24,9 @@
 <link href="{{asset('owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+<link rel="stylesheet" type="text/css" href="{{asset('css/jquery-ui.min.css')}}">
 <style>
-.homeen{color: #fff;font-size:23px;}
 .hamburger{
             display: none;
         }
@@ -35,18 +36,16 @@
         }
 }
 </style>
-<link rel="stylesheet" type="text/css" href="{{asset('css/jquery-ui.min.css')}}">
-
 </head>
 <body>
-@include('layouts.header')
+@include('eng.layouts.header')
 <main class="py-4">
             @yield('content')
 </main>
 
 
 
-@include('layouts.footer')
+@include('eng.layouts.footer')
 
 <div class="modal" id="myModal">
 <div class="container">

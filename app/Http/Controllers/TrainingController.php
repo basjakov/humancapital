@@ -27,9 +27,14 @@ class TrainingController extends Controller
     }
 
     public function page(){
-        $trainings =  DB::table('trainings')->paginate(15);
+        $trainings =  DB::table('trainings')->where('language','armenian')->orderBy('created_at', 'desc')->paginate(5);
     
         return view('trainings',compact('trainings'));
+    }
+    public function pageen(){
+        $trainings =  DB::table('trainings')->where('language','english')->orderBy('created_at', 'desc')->paginate(5);
+    
+        return view('eng.trainings',compact('trainings'));
     }
 
     /**
@@ -71,6 +76,7 @@ class TrainingController extends Controller
         };
 
         $training->title = $request->title;
+        $training->language = $request->language;
         $training->description =$request->description;
         $training->starting = $request->starting;
         $training->end =$request->end;
@@ -97,6 +103,12 @@ class TrainingController extends Controller
         $training =  training::findOrFail($id);
 
         return view('training',compact('training'));
+    }
+    public function showen($id)
+    {
+        $training =  training::findOrFail($id);
+
+        return view('eng.training',compact('training'));
     }
 
     /**
@@ -142,6 +154,7 @@ class TrainingController extends Controller
         };
 
         $training->title = $request->title;
+        $training->language = $request->language;
         $training->description =$request->description;
         $training->starting = $request->starting;
         $training->end =$request->end;

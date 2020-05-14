@@ -1,14 +1,17 @@
-@extends('eng.layouts.app')
+@extends('layouts.app')
+@section('switcher_hay')
+    <a href="{{route('vacancies')}}" style="color: #fff;font-size:23px;">Հայ</a>
+@endsection
 @section('seo')
-<meta name="author" content="humancapital">
-<meta name="description" content="Humancapital Find your dream job or obtain new skills through the most professional trainings
+<meta name="author" content="Humancapital">
+<meta name="description" content="Find your dream job or obtain new skills through the most professional trainings
 we offer making your career with us.">
-<meta name="keywords" content="Humancapital |job in armenia|english vachanchies">
+<meta name="keywords" content="humancapital |job in armenia|jobs |Hr armenia">
 
 
-<title>
-    Humancapital |job in armenia
-</title>
+
+<title>Humancapital |professional hr services</title>
+@endsection
 @section('content')
 
 <style>
@@ -28,7 +31,7 @@ we offer making your career with us.">
 <div class="vertical-space-30"></div>
 <div class="row">
 <div class="col-lg-4 col-md-12">
-<a href="{{route('vacancies')}}" class="font-color-black" style="font-size:30px;margin:0.2em;text-align:right;">Armenian</a>
+<a href="{{route('vacancies')}}" class="font-color-black" style="font-size:30px;margin:0.2em;text-align:right;">Հայերեն</a>
 <div class="Job-Category-box">
 <p class="title">Category</p>
 <ul>

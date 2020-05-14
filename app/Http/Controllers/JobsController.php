@@ -126,6 +126,10 @@ class JobsController extends Controller
             return view('job',compact('job'));
     }
 
+    public function jobsen($id){
+        $job = jobs::findOrFail($id);
+        return view('eng.job',compact('job'));
+    }
     /**
      * Show the form for editing the specified resource.
      *

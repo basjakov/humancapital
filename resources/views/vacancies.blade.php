@@ -1,4 +1,18 @@
 @extends('layouts.app')
+@section('switcher_eng')
+    <a href="{{route('vacancies_en')}}" style="color: #fff;font-size:23px;">Eng</a>
+@endsection
+@section('seo')
+<meta name="author" content="humancapital">
+<meta name="description" content="Humancapital |Թափուրև հաստիքներ">
+<meta name="keywords" content="">
+
+
+
+<title>
+    Humancapital |Աշխատանքնեև
+</title>
+
 @section('content')
 
 <style>
@@ -8,34 +22,18 @@
     }
 </style>
 
-<div id="search-box" class="margin-none">
-<div class="container search-box">
-<form action="#" id="search-box_search_form_3" class="search-box_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between ">
-<div class="d-flex flex-row align-items-center justify-content-start inline-block">
-<span class="large material-icons search">search</span>
-<input class="search-box_search_input" placeholder="Search Keyword" required="required" type="search">
-<select class="dropdown_item_select search-box_search_input">
-<option>Category</option>
-<option>Category1</option>
-<option>Category2</option>
-</select>
-<span class="large material-icons margin-top search">place</span>
-<input class="search-box_search_input " placeholder="Location" required="required" type="search">
-</div>
-<button type="submit" class="search-box_search_button">Search Jobs</button>
-</form>
-</div>
-</div>
+
 
 
 <section id="resent-job-post" class="background-color-white-drak">
 <div class="vertical-space-85"></div>
 <div class="container text-center">
-<h4 class="text-left">Filter Jobs Result</h4>
+<h4 class="text-left">Ֆիլտրել </h4>
 <div class="vertical-space-30"></div>
 <div class="row">
+   
 <div class="col-lg-4 col-md-12">
-<a href="{{route('vacancies_en')}}" class="font-color-black" style="font-size:30px;margin:0.2em;text-align:right;">English</a>
+ <a href="{{route('vacancies_en')}}" class="font-color-black" style="font-size:20px;margin:1.4em;text-align:right;">See Announcements in English</a>
 <div class="Job-Category-box">
 <ul>
 

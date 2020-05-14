@@ -1,14 +1,4 @@
-@extends('eng.layouts.app')
-@section('seo')
-<meta name="author" content="humancapital">
-<meta name="description" content="Humancapital Find your dream job or obtain new skills through the most professional trainings
-we offer making your career with us.">
-<meta name="keywords" content="Humancapital |job in armenia|english vachanchies">
-
-
-<title>
-    Humancapital |job in armenia
-</title>
+@extends('layouts.app')
 @section('content')
 
 <style>
@@ -19,45 +9,46 @@ we offer making your career with us.">
 </style>
 
 
-
+s
 
 <section id="resent-job-post" class="background-color-white-drak">
 <div class="vertical-space-85"></div>
 <div class="container text-center">
-<h4 class="text-left">Filter Jobs Result</h4>
+<h4 class="text-left">Ֆիլտրել </h4>
 <div class="vertical-space-30"></div>
 <div class="row">
+   
 <div class="col-lg-4 col-md-12">
-<a href="{{route('vacancies')}}" class="font-color-black" style="font-size:30px;margin:0.2em;text-align:right;">Armenian</a>
+ <a href="{{route('vacancies_en')}}" class="font-color-black" style="font-size:20px;margin:1.4em;text-align:right;">See Announcements in English</a>
 <div class="Job-Category-box">
-<p class="title">Category</p>
 <ul>
-<a href="{{route('vacancies_en')}}?category=office" class="font-color-black list_finder">Office work</a>
-<a href="{{route('vacancies_en')}}?category=trading" class="font-color-black list_finder">Trade</a>
-<a href="{{route('vacancies_en')}}?category=finance_law" class="font-color-black list_finder">Finance and Law</a>
-<a href="{{route('vacancies_en')}}?category=it_development" class="font-color-black list_finder">Computers and Internet</a>
-<a href="{{route('vacancies_en')}}?category=media_design" class="font-color-black list_finder">Media and Design</a>
-<a href="{{route('vacancies_en')}}?category=restaurant_kitchen" class="font-color-black list_finder">Food and Restaurants</a>
-<a href="{{route('vacancies_en')}}?category=tourism_hotel" class="font-color-black list_finder">Tourism and hotels</a>
-<a href="{{route('vacancies_en')}}?category=transport_taxt" class="font-color-black list_finder">Transportation and Taxi</a>
 
-<a href="{{route('vacancies_en')}}?category=beauty_spa" class="font-color-black list_finder">Beauty and spa</a>
-<a href="{{route('vacancies_en')}}?category=construction_archichecture" class="font-color-black list_finder">Construction and Architecture</a>
-<a href="{{route('vacancies_en')}}?category=home_economy" class="font-color-black list_finder">housekeeping</a>
-<a href="{{route('vacancies_en')}}?category=production_craft" class="font-color-black list_finder">Manufacturing and Crafts</a>
-<a href="{{route('vacancies_en')}}?category=bussiness_marketing" class="font-color-black list_finder">Business and marketing</a>
+</ul>
+<p class="title">Կատեգորիաներ</p>
+<ul>
+<a href="/vacancies/?category=office" class="font-color-black list_finder">Գրասենյակային աշխատանք</a>
+<a href="/vacancies/?category=trading" class="font-color-black list_finder">Առևտուր</a>
+<a href="/vacancies/?category=finance_law" class="font-color-black list_finder">Ֆինանսներ և իրավունք</a>
+<a href="/vacancies/?category=it_development" class="font-color-black list_finder">Համակարգիչներ և ինտերնետ</a>
+<a href="/vacancies/?category=media_design" class="font-color-black list_finder">Մեդիա և դիզայն</a>
+<a href="/vacancies/?category=restaurant_kitchen" class="font-color-black list_finder">Ռեստորաններ և խոհանոց</a>
+<a href="/vacancies/?category=tourism_hotel" class="font-color-black list_finder">Զբոսաշրջություն և հյուրանոցներ</a>
+<a href="/vacancies/?category=transport_taxt" class="font-color-black list_finder">Տրանսպորտ և տաքսի</a>
 
-<a href="{{route('vacancies_en')}}?category=education" class="font-color-black list_finder">Education</a>
-<a href="{{route('vacancies_en')}}?category=medical" class="font-color-black list_finder">Medicine and Health</a>
-<a href="{{route('vacancies_en')}}?category=other" class="font-color-black list_finder">Other</a>
+<a href="/vacancies/?category=beauty_spa" class="font-color-black list_finder">Գեղեցկության և սպա սրահներ</a>
+<a href="/vacancies/?category=construction_archichecture" class="font-color-black list_finder">Շինարարություն և ճարտարապետություն</a>
+<a href="/vacancies/?category=home_economy" class="font-color-black list_finder">Տնային տնտեսություն</a>
+<a href="/vacancies/?category=production_craft" class="font-color-black list_finder">Արտադրության և արհեստ</a>
+<a href="/vacancies/?category=bussiness_marketing" class="font-color-black list_finder">Գործարարություն և մարքեթինգ</a>
+
+<a href="/vacancies/?category=education" class="font-color-black list_finder">Կրթություն</a>
+<a href="/vacancies/?category=medical" class="font-color-black list_finder">Բժշկություն և առողջություն</a>
+<a href="/vacancies/?category=other" class="font-color-black list_finder">Այլ</a>
 </ul>
 </div>
 <div class="Job-Nature-box" style="margin-top:100px;">
 <!-- <p class="title">Job Nature</p>
-<ul>
-<li class="list-item1 "><a href="{{route('vacancies')}}" class="font-color-black">Armenian</a></li>
 
-</ul>
 </div>
 <div class="Salary-Range-box">
 <p class="title">Salary Range</p>
@@ -66,8 +57,8 @@ we offer making your career with us.">
 <input type="text" id="amount2" class="salery-range">
 </p>
 <div id="slider-range"></div>
-<p class="small-title">Experience Level</p>
-<form action="#" class="search-box_search_form">
+<p class="small-title">Experience Level</p> 
+ <form action="#" class="search-box_search_form">
 <select class="dropdown_item_select search-box_search_input">
 <option>Select experience level</option>
 <option>Select experience level1</option>
@@ -104,7 +95,7 @@ we offer making your career with us.">
 <span class="text font-size">{{$job->location}}</span>
 <div class="float-right margin-top text-align-center">
 <a href="#" class="part-full-time">{{$job->job_type}}</a></br>
-<a href="{{route('apply',$job->id)}}" class="part-full-time">Apply</a>
+<a href="{{route('apply',$job->id)}}" class="part-full-time">Դիմել</a>
 <p class="date-time">{{$job->deadline}}</p>
 </div>
 </div>

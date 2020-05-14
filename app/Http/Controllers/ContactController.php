@@ -12,7 +12,9 @@ class ContactController extends Controller
     public function index(){
         return view('contactus');
     }
-    
+    public function contacten(){
+        return view('eng.contactus');
+    }
     public function sendmail(Request $request){
         $this->validate($request, [
           'name'     =>  'required',

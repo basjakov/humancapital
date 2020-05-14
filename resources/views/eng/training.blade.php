@@ -1,8 +1,7 @@
-@extends('layouts.app')
-@section('switcher_eng')
-    <a href="{{route('trainingsen')}}" style="color: #fff;font-size:23px;">Eng</a>
+@extends('eng.layouts.app')
+@section('switcher_hay')
+    <a href="{{route('trainings')}}" style="color: #fff;font-size:23px;">Հայ</a>
 @endsection
-
 @section('seo')
 <meta name="author" content="{{$training->title}}">
 <meta name="description" content="{{$training->meta_description}}">
@@ -40,7 +39,7 @@
 <span class="text">{{$training->location}}</span>|
 <span class="text">{{$training->job_type}}</span>
 <div class="Job-Description">
-<h4>Նկարագրություն</h4>
+<h4>Description</h4>
 <?php 
     echo $training->description;
 ?>
@@ -48,9 +47,8 @@
 
 
 <ul>
-<li class="list-style">Սկսում է`<b>{{$training->starting}}</b></li></br>
-<li class="list-style">Վերջնաժամկետ`<b>{{$training->end}}</b></li>
-
+<li class="list-style">The course begins`<b>{{$training->starting}}</b></li></br>
+<li class="list-style">The course ends <b>{{$training->end}}</b></li>
 </ul>
 </div>
 </div>

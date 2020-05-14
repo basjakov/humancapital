@@ -1,7 +1,8 @@
 @extends('layouts.app')
-@section('switcher_eng')
-    <a href="{{route('vacancies_en')}}" style="color: #fff;font-size:23px;">Eng</a>
+@section('switcher_hay')
+    <a href="{{route('vacancies')}}" style="color: #fff;font-size:23px;">Հայ</a>
 @endsection
+
 @section('seo')
 <meta name="author" content="{{$job->title}}">
 <meta name="description" content="{{$job->meta_description}}">
@@ -9,7 +10,7 @@
 
 
 
-<title>{{$job->title}} |Humancapital</title>
+<title>{{$job->title}}</title>
 @endsection
 @section('content')
 <section id="intro">
@@ -30,35 +31,35 @@
 <div class="container background-color-full-white job-Details">
 <div class="Exclusive-Product">
 <h3>{{$job->title}}</h3>
-<a href="{{route('apply',$job->id)}}" class="Apply-Now">Դիմել Հիմա</a>
+<a href="{{route('apply',$job->id)}}" class="Apply-Now">Apply Now</a>
 <h6 class="font-color-orange">{{$job->company}}</h6>
 <i class="material-icons">place</i>
 <span class="text">{{$job->location}}</span>|
 <span class="text">{{$job->job_type}}</span>
-<h4>Նկարագրություն</h4>
+<h4>Description</h4>
 <?php 
     echo $job->description;
 ?>
 </div>
 
 <div class="Job-Description">
-<h4>Պարտականություններ</h4>
+<h4>Responsibilities</h4>
 <?php 
     echo  $job->Job_responsibilities
 ?>    
 <div class="vertical-space-20"></div>
-<h4>Պահանջներ և փորձառություն</h4>
+<h4>Experience & Requirement</h4>
 <?php 
     echo  $job->qualifications
 ?>  
 <ul>
-<li class="list-style">Պահանջվող մակարդակը՝ {{$job->level}}</li>
+<li class="list-style">Required level՝ {{$job->level}}</li>
 <li class="list-style">
-Հմտություններ`{{$job->skills}}
+Required skills`{{$job->skills}}
 <li class="list-style">
-Վերջնաժամկետ`<b>{{$job->deadline}}</b>
+Deadline`<b>{{$job->deadline}}</b>
 <li class="list-style">
-Աշխատավարձ`<b>{{$job->salery}}</b>
+Salary `<b>{{$job->salery}}</b>
 </ul>
 </div>
 </div>

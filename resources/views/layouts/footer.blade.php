@@ -5,7 +5,7 @@
 <div class="row">
 <div class="col-lg-7 col-md-7 vertical-space-2">
 <h5>Մեր մասին</h5>
-<p class="paregraf vertical-space-100">Մեր առաքելությունն է ապահովել թափանցիկություն մարդկային ռեսուրսների տարբեր ոլորտներում: Հանդիսանալով
+<p>Մեր առաքելությունն է ապահովել թափանցիկություն մարդկային ռեսուրսների տարբեր ոլորտներում: Հանդիսանալով
 ՄՌ արհեստավարժ թիմ, մենք Ձեր կողքին ենք՝ լրացնելու Ձեր ՄՌ բացերը և ուղղորդելու Ձեր աշխատակիցներին
 իրենց առավելապես արդյունավետ դրսևորելու համար:Կազմակերպության հաջողությունն անմիջականորեն կախված է աշխատակիցների հարաբերություններից: ՄՌ
 մասնագետներն ունեն իրենց բնորոշ մեթոդները, իսկ Հյումն Քյափիթալը կօգնի գտնել այն միակը, որը հենց Ձեր
@@ -21,7 +21,7 @@
 <a href="{{route('vacancies')}}">Աշխատատեղեր</a>
 <a href="{{route('trainings')}}">Դասընթացներ</a>
 <a href="{{route('contact')}}">Հետադարձ կապ</a>
-</div>
+</div></br>
 <a href="https://www.facebook.com/humancapital8" target="_blank" style="margin-top:35px;font-size:24px;">
 <i class="fa fa-facebook social-icon"></i></a>
 <a href="https://www.linkedin.com/company/human2capital/?viewAsMember=true&amp;fbclid=IwAR3KHjaauXLMyPfq7XClrTCjzx_EO7memAUkNFHqFevAqioyedTENKjsmM8" target="_blank" style="margin-top:35px;font-size:24px;">
@@ -37,7 +37,7 @@
 <form>
 <input type="email" class="email " placeholder="Email Address " required="">
 <span class="fa fa-envelope email-icone "></span>
-<input type="submit" class="Subscribe" value="Բաժանորդագրվիր">
+<input type="submit" class="Subscribe" style="width: 170px;" value="Բաժանորդագրվիր">
 </form>
 
 </div>

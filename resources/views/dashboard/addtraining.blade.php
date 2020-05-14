@@ -28,7 +28,13 @@
     <textarea class="description" name="description"
                             style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
   </div>
-
+  <div class="form-group">
+   <select class="browser-default custom-select" name="language">
+      <option selected>Ընտրեք լեզուն</option>
+      <option value="armenian">Հայերեն</option>
+      <option value="english">Անգլերեն</option>
+    </select>
+</div>
   <div class="form-group">
     <label class="label label-default">Սկիզբ*</label>
     <input type="date" class="form-control"  name="starting" > 

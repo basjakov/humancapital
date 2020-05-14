@@ -1,15 +1,15 @@
-@extends('layouts.app')
-@section('switcher_eng')
-    <a href="{{route('hcblogen')}}" style="color: #fff;font-size:23px;">Eng</a>
+@extends('eng.layouts.app')
+@section('switcher_hay')
+    <a href="{{route('hcblog')}}" style="color: #fff;font-size:23px;">Հայ</a>
 @endsection
 @section('seo')
 <meta name="author" content="humancapital">
-<meta name="description" content="Humancapital |մռ հոդվածներ">
-<meta name="keywords" content="Humancapital |մռ հոդվածնեև">
+<meta name="description" content="Humancapital |hr blog">
+<meta name="keywords" content="Humancapital |hr article">
 
 
 <title>
-    Humancapital |Հոդվածներ
+    Humancapital |hr blog
 </title>
 @endsection
 @section('content')
@@ -17,9 +17,9 @@
 <div class="vertical-space-100"> </div>
 <div class="vertical-space-101"> </div>
 <div class="container">
-<h3>Բլոգ</h3>
+<h3>Blog</h3>
 <div class="vertical-space-20"></div>
-<p>Տեղեկացեք ՄՌ ոլորտի վերջին նորություններից:</p>
+<p>The latest HR news.</p>
 
 <div class="vertical-space-50"></div>
 <div class="row">

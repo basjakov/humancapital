@@ -30,6 +30,10 @@ class BlogController extends Controller
         $blogs =  blog::paginate(15);
         return view('blog',compact('blogs'));
     }
+    public function blog_pageen(){
+        $blogs =  blog::paginate(15);
+        return view('eng.blog',compact('blogs'));
+    }
     /**
      * Show the form for creating a new resource.
      *
